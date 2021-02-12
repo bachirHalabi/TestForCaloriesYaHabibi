@@ -1,0 +1,778 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% block content %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fitness </title>
+        <link rel="stylesheet"
+              src="{% static 'normalize.css'%}">
+        <link rel="stylesheet" src="{% static 'index.css'%}">
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+/* Start Main Rulez*/
+
+
+.clearfix {clear: both}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Start Main Rulez */
+
+
+/* Start How It Works */
+.how-it-works {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #a2ca28;
+    color: #faf0e6
+}
+
+.how-it-works .works {
+    float: left;
+    display: inline-block;
+    width: 23%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 24px
+
+}
+
+.how-it-works .works img {width: 50px}
+
+.how-it-works .works h3,.how-it-works .works p {
+    margin-bottom: 25px
+}
+
+.how-it-works .works a {color: #faf0e6;text-decoration: none}
+
+/* End How It Works */
+
+/* Start fitness-first */
+
+.services {
+    overflow: hidden;
+    background-color: #a2ca28;
+}
+
+.services .fitness-first {
+    background-color: #fff;
+    text-align: center;
+    width: 35%;
+    float: left;
+    height: 400px
+
+}
+
+.services .fitness-first h5 {
+    color: #fd634e;
+    margin-bottom: 0;
+    margin-top: 65px
+}
+
+.services .fitness-first h3 {
+    color: #a2ca28;
+    font-size: 40px;
+    font-family: Sans-serif;
+    margin: 0
+}
+
+.services .fitness-first p {
+    padding: 50px 75px 0 75px
+}
+
+.services .fitness-first a {
+    color: #a2ca28;
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+.services .image {
+    width: 65%;
+    float: left;
+    height: 400px
+}
+.services .image img {
+    height: 100%;
+    background-size: cover;
+    width: 100%
+}
+
+
+/* End fitness-first */
+
+/* Start Health */
+
+.health {overflow: hidden;background-color: #fd634e}
+
+.health .health-fitness {height: 400px}
+
+
+.health .health-fitness .image1 img {
+    float: left;
+    width: 35%;
+    height: 400px
+
+}
+
+.health .health-fitness .image2 img {
+    float: left;
+    width: 65%;
+    height: 400px
+
+}
+
+.health .life-summer {height: 350px}
+
+.health .life-summer .life-style {
+    float: left;
+    width: 35%;
+    background-color: #fff;
+    height: 100%
+}
+
+.health .life-summer .life-style h5 {
+    margin: 50px 0 0 30px;
+    color: #fd634e
+}
+
+.health .life-summer .life-style h3 {
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+    color: #a2ca28
+
+}
+
+.health .life-summer .life-style p {
+    padding: 10px 25px 0 30px
+}
+
+.health .life-summer .summer {
+    float: left;
+    width: 65%;
+    background-color: #a2ca28;
+    color: #FFF;
+    height: 100%
+}
+
+.health .life-summer .summer h3 {
+    margin: 80px 0 0 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.health .life-summer .summer p {
+    padding: 10px 25px 0 30px
+}
+
+.health .health-fruits {height: 350px}
+
+.health .health-fruits .image3 img {
+    float: left;
+    width: 65%;
+    height: 350px;
+    background-size: cover
+}
+
+
+
+.health .health-fruits .image4 img {
+    float: left;
+    width: 35%;
+    height: 350px;
+    background-size: cover
+}
+
+
+
+.health .involved-eating {height: 300px}
+
+.health .involved-eating .involved {
+    float: left;
+    width: 65%;
+    background-color: #FFF;
+    height: 100%
+}
+
+.health .involved-eating .involved h5 {
+    margin: 50px 0 0 30px;
+    color: #fd634e
+}
+
+.health .involved-eating .involved h3 {
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+    color: #a2ca28
+
+}
+
+.health .involved-eating .involved p {
+    padding: 10px 25px 0 30px
+}
+
+.health .involved-eating .eating {
+    float: left;
+    width: 35%;
+    background-color: #a2ca28;
+    height: 100%;
+    color: #FFF
+}
+
+.health .involved-eating .eating h5 {
+    margin: 50px 0 0 30px;
+}
+
+.health .involved-eating .eating h3 {
+    margin: 10px 0 0 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.health .involved-eating .eating p {
+    padding: 10px 25px 50px 30px
+}
+
+
+
+/* End Health */
+
+
+/* Start Leader */
+
+.leader {
+    background-image: url(https://i.imgur.com/43S6FM9.jpg);
+    text-align: center;
+    height: 800px;
+    color: #FFF;
+}
+
+.leader h2 {
+    margin: 0;
+    padding-top: 250px;
+    font-size: 50px
+}
+
+.leader p {
+    padding-left: 300px;
+    padding-right: 300px;
+    display: inline-block;
+    line-height: 1.7
+}
+
+/* End Leader */
+
+
+
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+
+        <!-- Start How It Works -->
+        <div class="how-it-works">
+            <div class="container" >
+                <div class="works">
+                    <img src="https://i.imgur.com/DV5IjtG.png">
+                    <h3>Resourrces</h3>
+                    <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+                    </p>
+                    <a href="#" target="_blank">Explore more →</a>
+                </div>
+                <div class="works">
+                    <img src="https://i.imgur.com/b7hjFTV.png">
+                    <h3>Training &amp; Founding</h3>
+                    <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+                    </p>
+                    <a href="#" target="_blank">Explore more →</a>
+                </div >
+                <div class="works">
+                    <img src="https://i.imgur.com/ZNQ7KMe.png">
+                    <h3>connect</h3>
+                    <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+                    </p>
+                    <a href="#" target="_blank">Explore more →</a>
+                </div>
+                <div class="works">
+                    <img src="https://i.imgur.com/BNk7oMR.png">
+                    <h3>Comunication</h3>
+                    <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+                    </p>
+                    <a href="#" target="_blank">Explore more →</a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!-- Start Fitness First-->
+
+        <div class="services">
+            <div class="container">
+                <div class="fitness-first">
+                    <h5>It's All About</h5>
+                    <h3>Fitness First</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud.
+
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="image"><img src="https://i.imgur.com/bbyoyYK.jpg"></div>
+                <div class="clearfix"></div>
+                <div class="image"><img src="https://i.imgur.com/Kll8byK.jpg"></div>
+                <div class="fitness-first">
+                    <h5>Love Your</h5>
+                    <h3>Your Body</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud.
+
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- End Fitness First-->
+
+
+        <!-- End How It Works -->
+
+        <!-- Start Health -->
+
+        <div class="health">
+            <div class="container">
+                <div class="health-fitness">
+                    <div class="image1"><img src="https://i.imgur.com/H139O93.jpg"></div>
+                    <div class="image2"><img src="https://i.imgur.com/wGCTNZJ.jpg"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="life-summer">
+                    <div class="life-style">
+                        <h5>Track Your</h5>
+                        <h3>Life Style</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud.
+
+                        </p>
+                    </div>
+                    <div class="summer">
+                        <h3>Summer Of Fun</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix>"></div>
+                <div class="health-fruits">
+                    <div class="image3"><img src="https://i.imgur.com/uO1v2m6.jpg"></div>
+                    <div class="image4"><img src="https://i.imgur.com/bWSCdis.jpg"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="involved-eating">
+                    <div class="involved">
+                        <h5>Track Your</h5>
+                        <h3>Get Involved In YourSelf</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud.
+
+                        </p>
+                    </div>
+                    <div class="eating">
+                        <h5>Improve Your</h5>
+                        <h3>Eating Habits</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud.
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- End Health -->
+
+        <!-- Start Leader -->
+        <div class="leader">
+            <div class="container">
+                <h2>We Launch Leaders With Big Ideas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+
+
+        <!-- End Leader -->
+
+        <!-- Start Footer -->
+
+
+        <!-- Start Footer -->
+
+
+
+    </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,360 @@
+/* Start Main Rulez*/
+
+
+.clearfix {clear: both}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Start Main Rulez */
+
+/* Start Header */
+.header {
+    background-image: url(https://i.imgur.com/4Ae0ild.png);
+    background-size: cover;
+    margin: 0;
+    height: 800px;
+    color: #fff;
+    background-repeat :no-repeat;
+    width: 100%;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+
+.header  .logo {float: left}
+
+.header  .logo h3 {margin: 0;padding-top: 30px}
+
+.header  .logo h3 span {border-bottom: 2px solid #a2ca28}
+
+.header  ul {
+    float: right;
+    list-style-type: none;
+}
+
+.header ul li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 20px
+}
+
+
+
+
+
+/* End Header */
+
+/* Start How It Works */
+.how-it-works {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #a2ca28;
+    color: #faf0e6
+}
+
+.how-it-works .works {
+    float: left;
+    display: inline-block;
+    width: 23%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 24px
+
+}
+
+.how-it-works .works img {width: 50px}
+
+.how-it-works .works h3,.how-it-works .works p {
+    margin-bottom: 25px
+}
+
+.how-it-works .works a {color: #faf0e6;text-decoration: none}
+
+/* End How It Works */
+
+/* Start fitness-first */
+
+.services {
+    overflow: hidden;
+    background-color: #a2ca28;
+}
+
+.services .fitness-first {
+    background-color: #fff;
+    text-align: center;
+    width: 35%;
+    float: left;
+    height: 400px
+
+}
+
+.services .fitness-first h5 {
+    color: #fd634e;
+    margin-bottom: 0;
+    margin-top: 65px
+}
+
+.services .fitness-first h3 {
+    color: #a2ca28;
+    font-size: 40px;
+    font-family: Sans-serif;
+    margin: 0
+}
+
+.services .fitness-first p {
+    padding: 50px 75px 0 75px
+}
+
+.services .fitness-first a {
+    color: #a2ca28;
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+.services .image {
+    width: 65%;
+    float: left;
+    height: 400px
+}
+.services .image img {
+    height: 100%;
+    background-size: cover;
+    width: 100%
+}
+
+
+/* End fitness-first */
+
+/* Start Health */
+
+.health {overflow: hidden;background-color: #fd634e}
+
+.health .health-fitness {height: 400px}
+
+
+.health .health-fitness .image1 img {
+    float: left;
+    width: 35%;
+    height: 400px
+
+}
+
+.health .health-fitness .image2 img {
+    float: left;
+    width: 65%;
+    height: 400px
+
+}
+
+.health .life-summer {height: 350px}
+
+.health .life-summer .life-style {
+    float: left;
+    width: 35%;
+    background-color: #fff;
+    height: 100%
+}
+
+.health .life-summer .life-style h5 {
+    margin: 50px 0 0 30px;
+    color: #fd634e
+}
+
+.health .life-summer .life-style h3 {
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+    color: #a2ca28
+
+}
+
+.health .life-summer .life-style p {
+    padding: 10px 25px 0 30px
+}
+
+.health .life-summer .summer {
+    float: left;
+    width: 65%;
+    background-color: #a2ca28;
+    color: #FFF;
+    height: 100%
+}
+
+.health .life-summer .summer h3 {
+    margin: 80px 0 0 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.health .life-summer .summer p {
+    padding: 10px 25px 0 30px
+}
+
+.health .health-fruits {height: 350px}
+
+.health .health-fruits .image3 img {
+    float: left;
+    width: 65%;
+    height: 350px;
+    background-size: cover
+}
+
+
+
+.health .health-fruits .image4 img {
+    float: left;
+    width: 35%;
+    height: 350px;
+    background-size: cover
+}
+
+
+
+.health .involved-eating {height: 300px}
+
+.health .involved-eating .involved {
+    float: left;
+    width: 65%;
+    background-color: #FFF;
+    height: 100%
+}
+
+.health .involved-eating .involved h5 {
+    margin: 50px 0 0 30px;
+    color: #fd634e
+}
+
+.health .involved-eating .involved h3 {
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+    color: #a2ca28
+
+}
+
+.health .involved-eating .involved p {
+    padding: 10px 25px 0 30px
+}
+
+.health .involved-eating .eating {
+    float: left;
+    width: 35%;
+    background-color: #a2ca28;
+    height: 100%;
+    color: #FFF
+}
+
+.health .involved-eating .eating h5 {
+    margin: 50px 0 0 30px;
+}
+
+.health .involved-eating .eating h3 {
+    margin: 10px 0 0 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.health .involved-eating .eating p {
+    padding: 10px 25px 50px 30px
+}
+
+
+
+/* End Health */
+
+
+/* Start Leader */
+
+.leader {
+    background-image: url(https://i.imgur.com/43S6FM9.jpg);
+    text-align: center;
+    height: 800px;
+    color: #FFF;
+}
+
+.leader h2 {
+    margin: 0;
+    padding-top: 250px;
+    font-size: 50px
+}
+
+.leader p {
+    padding-left: 300px;
+    padding-right: 300px;
+    display: inline-block;
+    line-height: 1.7
+}
+
+/* End Leader */
+
+/* Start Footer */
+
+.footer {
+    overflow: hidden;
+    background-color: #0d1119;
+    color: #fff;
+    height: 300px
+}
+
+.footer .resources {
+    width: 35%;
+    float: left;
+    margin-right: 5%;
+}
+
+.footer .about-us {
+    width: 35%;
+    float: left;
+    margin-right: 3%;
+}
+
+.footer .social {
+    width: 20%;
+    float: left;
+
+}
+
+.footer .social ul {
+    float: left;
+    list-style: none;
+    padding-left: 0
+}
+
+.footer .social ul li {
+    width: 50px;
+    height: 50px;
+    float: left;
+   padding-right: 5px
+}
+
+.footer .social ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+.footer form {
+    float: right
+}
+
+.footer form label input[type="text"] {
+    padding: 13px
+}
+
+.footer form label input[placeholder="Your Email"] {
+    padding-right: 52px
+}
+
+.footer form label input[type="button"] {
+    padding: 15px 52px 15px 52px;
+    background-color: #a2ca28;
+    color: #FFF;
+    text-align: center;
+    border: 0
+}
+/* End Footer */
+
+
+

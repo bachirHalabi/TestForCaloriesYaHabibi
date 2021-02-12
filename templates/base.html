@@ -1,0 +1,190 @@
+
+<!doctype html>
+<html lang="en">
+<html>
+
+<head>
+
+    <style>
+
+/* Start Header */
+.header {
+    background-image: url(https://i.imgur.com/4Ae0ild.png);
+    background-size: cover;
+    margin: 0;
+    height: 800px;
+    color: #fff;
+    background-repeat :no-repeat;
+    width: 100%;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+
+.header  .logo {float: left}
+
+.header  .logo h3 {margin: 0;padding-top: 30px}
+
+.header  .logo h3 span {border-bottom: 2px solid #a2ca28}
+
+.header  ul {
+    float: right;
+    list-style-type: none;
+}
+
+.header ul li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 20px
+}
+
+
+
+
+
+/* End Header */
+
+/* Start Footer */
+
+.footer {
+    overflow: hidden;
+    background-color: #0d1119;
+    color: #fff;
+    height: 300px
+}
+
+.footer .resources {
+    width: 35%;
+    float: left;
+    margin-right: 5%;
+}
+
+.footer .about-us {
+    width: 35%;
+    float: left;
+    margin-right: 3%;
+}
+
+.footer .social {
+    width: 20%;
+    float: left;
+
+}
+
+.footer .social ul {
+    float: left;
+    list-style: none;
+    padding-left: 0
+}
+
+.footer .social ul li {
+    width: 50px;
+    height: 50px;
+    float: left;
+   padding-right: 5px
+}
+
+.footer .social ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+.footer form {
+    float: right
+}
+
+.footer form label input[type="text"] {
+    padding: 13px
+}
+
+.footer form label input[placeholder="Your Email"] {
+    padding-right: 52px
+}
+
+.footer form label input[type="button"] {
+    padding: 15px 52px 15px 52px;
+    background-color: #a2ca28;
+    color: #FFF;
+    text-align: center;
+    border: 0
+}
+/* End Footer */
+
+    </style>
+
+
+
+
+  <!-- Start Header -->
+        <div class="header">
+            <div class="slider">
+                    <div class="logo"><h3><span>fit</span>ness </h3></div>
+                    <ul>
+                        <li>About</li>
+                        <li>How It Works</li>
+                        <li>Services</li>
+                        <li>Faq</li>
+                        <li>Contact</li>
+                    </ul>
+            </div>
+        </div>
+        <!-- End Header -->
+</head>
+
+{% block content %}
+
+
+
+
+
+
+
+
+{% endblock %}
+
+<body>
+    <div class="footer">
+            <div class="container">
+                <div>
+                    <div class="resources">
+                        <h3>Resources</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="about-us">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="social">
+                        <h3>Stay In Touch</h3>
+                        <ul>
+                            <li><img src="https://i.imgur.com/a0GKXsO.png"></li>
+                            <li><img src="https://i.imgur.com/Vh2FDi0.png"></li>
+                            <li><img src="https://i.imgur.com/8iTsjDf.png"></li>
+                            <li><img src="https://i.imgur.com/QYyYXEt.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <form>
+                    <label>
+                        <input type="text" placeholder="Your Name" >
+                        <input class="email" type="text" placeholder="Your Email">
+                        <input  type="button" value="Join Newsletter">
+                    </label>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
